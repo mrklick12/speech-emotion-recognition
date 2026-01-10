@@ -1,14 +1,3 @@
-"""Helper utilities to produce a single-row feature vector for the model.
-
-This module re-uses the feature extraction helpers in `audiofunctions.py` and
-provides:
-- `FEATURE_NAMES`: canonical order used by the model/training CSV
-- `get_feature_vector(filepath)`: returns `np.ndarray` shaped (1, n_features)
-- `predict_with_joblib(model_path, filepath)`: convenience loader + predict
-
-If you trained the model with a different feature order, update
-`FEATURE_NAMES` to match the training ordering exactly.
-"""
 from typing import List, Tuple
 import os
 import numpy as np
@@ -104,3 +93,4 @@ def predict_with_joblib(model_path: str, filepath: str):
     prediction = model.predict(df)
     result = {"prediction": prediction}
     return result
+
