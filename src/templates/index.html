@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emotion Identifier</title>
+    <link rel="stylesheet" href="\static\bootstrap.css">
+    <link rel="stylesheet" href="\static\styles.css">
+    <style>
+      .upload-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+        gap: 16px;
+      }
+      .upload-box {
+        width: 380px;
+        padding: 20px 24px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        text-align: center;
+      }
+      .upload-box .form-label {
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+      #formFile { display: block; margin: 0 auto; }
+    </style>
+</head>
+<body>
+
+<div>
+<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Emotion Identifier</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+</div>
+
+<div class="upload-container">
+    <div class="upload-box">
+    <form method="post" action="/check" enctype="multipart/form-data">
+      <label for="formFile" class="form-label">Upload .wav file here (10MB limit)</label>
+      <input class="form-control" type="file" id="formFile" name="file" accept=".wav,audio/wav">
+      <button type="submit" class="btn btn-primary mt-3">Check Emotion!</button>
+    </form>
+  </div>
+
+  {% if message or result %}
+  <div class="card mt-4" style="max-width: 28rem; background: white; border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border-radius: 12px;">
+    <div class="card-header" style="background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%); border: none; border-radius: 12px 12px 0 0;">
+      <h5 class="card-title mb-0" style="color: white; font-weight: 600;">Result</h5>
+    </div>
+    <div class="card-body" style="padding: 24px;">
+      <h4 class="card-title" style="color: #1565c0; font-weight: 700; margin-bottom: 12px;">{{ result }}</h4>
+      {% if message %}
+      <p class="card-text" style="color: #555; font-size: 14px;">{{ message }}</p>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+</body>
+</html>
