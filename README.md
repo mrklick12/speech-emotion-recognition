@@ -6,40 +6,40 @@
 
 <img width="2535" height="731" alt="image" src="https://github.com/user-attachments/assets/7aa044d0-0238-4b13-837e-3e63a7582b40" />
 
-<b>Motivation</b>
+<h3>Motivation</h3>
 
 Human speech carries far more information than words alone. Emotion, intent, and emphasis are embedded in acoustic patterns such as pitch, energy, and rhythm. 
 
 As someone interested in machine learning and artifiical inteligence, I wanted to explore how much of this information can be captured using practical, interpretable methods and how we can interpret that into a more qualitative aspect.
 
-This project was motivated by the idea that emotionally aware systems are a key step towards more natural and human-like interaction between people and machines. Instead of chasing novelty or over-complexity, the focus here is on building a system that works end-to-end, is understandable, and highlights both the strengths and limits of classical ML when applied to real audio data.
+This project was driven by the idea that emotionally aware systems are key to making human–machine interaction feel natural rather than mechanical. Voice is one of the richest carriers of emotion, and work like that done at ElevenLabs shows how expressive and human-centred speech technology can be.
 
 <h3>What I Built</h3>
 <p>
   I implemented a complete speech emotion recognition (SER) pipeline using the <b>RAVDESS</b> dataset as a benchmark.
-  The system operates in four stages:
+  The system operates in four stages:       
 </p>
 <ol>
   <li>
-    <b>Feature extraction</b><br/>
+    <b>Feature extraction</b>
     Hand-engineered audio features were extracted from raw speech, including:
     <ul>
       <li>Pitch statistics</li>
       <li>Energy (RMS)</li>
-      <li>MFCCs</li>
+      <li>MFCCs (Mel-Frequency Cepstral Coefficients)</li>
       <li>Spectral features</li>
       <li>Temporal features such as onset rate and tempo</li>
     </ul>
     These features were chosen to reflect known acoustic correlates of emotion while remaining interpretable.
   </li>
   <li>
-    <b>Model</b><br/>
+    <b>Model</b>
     The classifier is a <b>Support Vector Machine (SVC)</b> with an <b>RBF kernel</b>, implemented as a scikit-learn
     pipeline with preprocessing and imputation. This choice prioritises strong performance on limited data and
     robustness over architectural complexity.
   </li>
   <li>
-    <b>Training and evaluation</b><br/>
+    <b>Training and evaluation</b>
     On benchmark data, the model achieves <b>~80%+ accuracy</b> for multi-class emotion classification under standard
     train/test splits.
   </li>
