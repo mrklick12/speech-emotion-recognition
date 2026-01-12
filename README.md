@@ -1,4 +1,4 @@
-<h1>Machine Learning Speech Emotion Recognition</h1>
+<h1>Machine Learning Speech Emotion Recognition Model</h1>
 
 <h6>Speech emotion recognition system using classical ML and engineered audio features.</h6>
 
