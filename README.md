@@ -61,11 +61,6 @@ This project was driven by the idea that emotionally aware systems are key to ma
   importance of speaker normalisation, data diversity, and domain adaptation in real-world deployments.
 </p>
 
-<h3>Demo</h3>
-<p>
-  Inference can be run in a few lines by loading the trained pipeline and passing extracted features into the model. A
-  minimal example is included in the repository to demonstrate this process clearly.
-</p>
 
 <h3>Why This Matters</h3>
 <ul>
