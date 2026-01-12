@@ -1,6 +1,6 @@
 <h2>Machine Learning Speech Emotion Recognition</h2>
 
-<h6>High-accuracy speech emotion recognition system using classical ML and engineered audio features.</h6>
+<h6>Speech emotion recognition system using classical ML and engineered audio features.</h6>
 
 
 
