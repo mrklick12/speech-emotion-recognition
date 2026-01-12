@@ -34,8 +34,8 @@ This project was driven by the idea that emotionally aware systems are key to ma
   </li>
   <li>
     <b>Model</b>
-    The classifier is a <b>Support Vector Machine (SVC)</b> with an <b>RBF kernel</b>, implemented as a scikit-learn
-    pipeline with preprocessing and imputation. This choice prioritises strong performance on limited data and
+    The classifier is a <b>Support Vector Machine (SVC), implemented as a scikit-learn pipeline with
+    preprocessing and imputation. This choice prioritises strong performance on limited data and
     robustness over architectural complexity.
   </li>
   <li>
