@@ -8,7 +8,7 @@
 
 <h3>Motivation</h3>
 
-The human speech carries far more information than words alone. Emotion, intent, and emphasis are embedded in acoustic patterns such as pitch, energy, and rhythm. These can simply be numbers when extracted from an audio file.
+The human speech carries far more information than words alone. Emotion, intent, and emphasis are embedded in acoustic patterns such as pitch, energy, and rhythm. These can simply be numerical infomation when extracted from an audio file.
 
 As someone interested in machine learning and artifiical inteligence, I wanted to explore how much of this information can be captured using practical, interpretable methods and how we can interpret that into a more qualitative aspect.
 
