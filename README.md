@@ -53,12 +53,12 @@ This project was driven by the idea that emotionally aware systems are key to ma
 <h3>Results and Limitations</h3>
 <p>
   The model performs strongly <b>in-distribution</b>, where speaker characteristics and recording conditions are similar
-  to the training data. As expected, performance drops when evaluated on out-of-distribution inputs (e.g. new speakers
-  or recording setups), highlighting the challenge of domain shift in speech emotion recognition.
+  to the training data. As expected, performance drops when evaluated on out-of-distribution inputs (e.g. new speaker), 
+  highlighting the challenge of domain shift in speech emotion recognition.
 </p>
 <p>
-  Rather than treating this as a failure, it reflects a realistic constraint of supervised ML systems and reinforces the
-  importance of speaker normalisation, data diversity, and domain adaptation in real-world deployments.
+  Rather than treating this as a failure, I thought it reflects a realistic constraint of supervised ML systems and reinforces the
+  importance of data diversity in real-world applications.
 </p>
 
 
