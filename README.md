@@ -63,6 +63,7 @@ This project was driven by the idea that emotionally aware systems are key to ma
 
 
 <h3>Why This Matters</h3>
+<b>What I took from this project:</b>
 <ul>
   <li>A solid understanding of <b>audio-based machine learning</b></li>
   <li>The ability to design and implement <b>end-to-end ML systems</b></li>
@@ -70,5 +71,5 @@ This project was driven by the idea that emotionally aware systems are key to ma
 </ul>
 <p>
   Most importantly, it reflects a genuine interest in how machine learning can be applied thoughtfully to human
-  communication — an area I am keen to continue exploring further.
+  communication, an area I am keen to continue exploring further.
 </p>
