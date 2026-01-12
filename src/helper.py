@@ -14,7 +14,7 @@ except Exception:
 
 # A feature vector (for future use) is defined as a numpy array of N elements eg: Fv = [f1, f2, f3,.., fN]
 
-# IMPORTANT!! Features must be kept in this order (or the same order as your training data)
+# IMPORTANT!! Features must be kept in this order (or the same order as your training data if you decide to use this)
 FEATURE_NAMES: List[str] = [
     "pitch_mean",
     "pitch_std",
@@ -93,4 +93,5 @@ def predict_with_joblib(model_path: str, filepath: str):
     prediction = model.predict(df)
     result = {"prediction": prediction}
     return result
+
 
